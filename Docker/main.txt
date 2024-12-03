@@ -1,1 +1,32 @@
+sudo apt-get update && sudo apt-get upgrade -y
+sudo usermod -aG docker $USER | newgrp docker 
 
+docker run -it hello-world
+docker container ls 
+docker images | docker image ls | -a
+docker exec -it ubuntu bash
+docker rmi <images_id>
+docker rm -rf <container_id>
+docker start <container_id>
+docker stop <container_id>
+docker run -d -p 80:80 nginx
+docker ps 
+
+docker volume :
+      create      Create a volume
+      inspect     Display detailed information on one or more volumes
+      ls          List volumes
+      prune       Remove unused local volumes
+      rm          Remove one or more volumes
+  
+docker network 
+      connect     Connect a container to a network
+      create      Create a network
+      disconnect  Disconnect a container from a network
+      inspect     Display detailed information on one or more networks
+      ls          List networks
+      prune       Remove all unused networks
+      rm          Remove one or more networks
+
+Remove all containes -- docker rm -vf $(docker ps -aq)
+Remove all images --  docker rmi -f $(docker images -aq)
