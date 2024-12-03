@@ -1,0 +1,5 @@
+git clone <URL>
+git status 
+git add <filename> | .(for all file at one time)
+git commit -m "Message for commit"
+git remote -v 
