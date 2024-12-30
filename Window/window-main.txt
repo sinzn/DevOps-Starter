@@ -1,1 +1,257 @@
+can't create con/aux name folder
+open cmd -- md aux\
 
+In the "Let's connect you to a network" screen, press Shift+F10 to launch cmd;
+Type the following command: OOBE\BYPASSNRO 
+
+To find user        -- QUERY USER/SERVER:(IP)10.112.201.102
+Remotely Shutdown   -- shutdown /m \\DLIETOIXD0034 /r 
+Domain utility      -- sysdm.cpl 
+user policy & acces -- secpol.msc
+Printer Properties  -- Control Printers
+event viewwer      -- eventvwr 
+antivirius scan     -- mrt
+App Wizard          -- Appwiz.cpl
+Network Connection  -- Ncpa.cpl
+Remote connection   -- mstsc  
+To open Firewall    -- Firewall.cpl
+To task scheduler   -- taskschd.msc
+to task manager     -- taskmgr
+Services Manager    -- Services.msc
+Computer Management -- compmgmt.msc
+to open systeminfo  -- systeminfo  
+to check traceroute -- tracert 8.8.8.8 (google.com)
+to get mac address  -- getmac
+to check            -- nslookup 8.8.8.8 (try dns)
+User Accounts       -- Netplwiz   
+Internet property   -- inetcpl.cpl 
+Mouse Controler     -- main.cpl
+Shutdown imidetly   -- Shutdown -f
+Shutdown Using IP   -- Shutdown -i
+To restart system   -- shutdown /r 
+To shutdown system  -- shutdown /s  |  Shutdown -f  |  window + x --> u + u	 
+To instant system   -- shutdown -s -t 00
+To read only drive  -- list disk  --> slect disk 2 - ->attributes set successfully readonly 
+To scan N/w         -- arp -a
+to clear promt      -- cls
+to clean temp       -- cleanmgr  >> Temp  >>  %temp%  >>  prefetch
+To remove directory -- rmdir 
+to make directory   -- mkdir 
+goto Startup folder -- shell:startup
+get product info    -- wmic csproduct
+serialnumber        -- wmic bios get serialnumber 
+check hostname      -- hostname
+copy dir or file    -- cp
+move dir or file    -- mv
+Run Ping            -- ping 10.112.1.51 -t
+change prompt       -- prompt prompt_name $G
+To cmd title        -- title "window"
+open port           -- netstat -an
+check ipaddress     -- ipconfig
+ipaddress status    -- ipconfig /all
+window repair       -- sfc
+battery health      -- powercfg batteryreport
+to print route      -- route print
+diskpart            -- list disk
+hide file img       -- copy /b  1.txt + 2.zip  "newfilename.jpeg"
+to cp to prompt     -- copy >> paste 
+history cmd         -- f7 
+to chcek user       -- net user  view user | net user psswd
+access file in bro  -- file:///C:/
+
+storage     -- clearing temp 
+antivirus   -- search mrt     
+night mode  -- search nightlight 
+step recor  -- to see step what i do 
+screen shot -- window + shift + s 
+window + +  -- magnifier
+window + g  -- screen recorder
+window + w  -- white board
+window + e  -- file explore
+window + r  -- run 
+window + D  -- desktop
+window + p  -- change screen (dual or one monitor)
+window + a  - side tab 
+window + h  -- voice typeing 
+window + k  -- connect bluetooth device
+window + x  -- window feature 
+window + v  -- copy / paste
+window + m  -- miinimise all window 
+window + .  -- emoji 
+window + t  -- task bar access
+window + 1  -- acces taksbar icons
+fn + arrow  -- keyword light
+fn + v      -- fps/deaflat/rfg
+alt + tab   -- switch tabs
+new desktop -- win + shift + d 
+return page -- win + shit + arrow 
+cch laguage -- window + space
+
+to find user activity  -- tasklist /s 10.112.1.140 /fi "imagename eq explorer.exe" /v
+find user info         -- wmic /node: 10.112.1.51 computersystem get manufacturer, model, username
+find last boot up      -- wmic /node:10.102.43.43 path Win32_OperatingSystem get LastBootUpTime
+
+ :) adding drive using bat
+net use F:	\\10.125.34.20\times 
+net use G:	\\10.125.34.20\feature 
+net use H:	\\10.125.34.20\photo-section
+
+ :) shutdown -r -f -m \\10.125.37.34
+shutdown -r -f -m \\10.125.37.34
+creating .bat and restart all system 
+
+           [:] for ping all seprate terminals
+                      @echo off
+start powershell.exe  -NoExit -Command ping 10.112.1.141 -t
+start powershell.exe  -NoExit -Command ping 10.112.1.81 -t
+start powershell.exe  -NoExit -Command ping 10.112.1.51 -t
+
+net use F:	\\10.112.1.140\Shared_Folder 
+start "server 1" ping 10.112.1.140 -t
+echo hello > hello.txt
+type hello.txt
+transfer data > ipmessanger
+
+Filezila 
+
+
+
+
+net user                                         ## Lists all user accounts.
+net user [username]                              # Displays details about a specific user.
+net user [username] /add                         # Adds a new user.
+net user [username] /delete                      # Deletes a user account.
+net localgroup                                   # Lists all local groups.
+net localgroup [groupname]                       # Displays users in a specific group.
+net localgroup [groupname] [username] /add       # Adds a user to a local group.
+net localgroup [groupname] [username] /delete    # Removes a user from a local group.
+whoami                                           # Displays the current logged-in user.
+wmic useraccount get name                        # Lists all user accounts.
+Get-LocalUser                                    # (PowerShell) Lists local users.
+Get-LocalGroup                                   # (PowerShell) Lists local groups.
+Get-LocalGroupMember [group]                     # (PowerShell) Lists users in a group.
+Enable-LocalUser [username]                      # (PowerShell) Enables a disabled user account.
+Disable-LocalUser [username]                     # (PowerShell) Disables a user account.
+
+
+## System Utilities
+1. **Command Prompt** - `cmd`
+2. **PowerShell** - `powershell`
+3. **Task Manager** - `taskmgr`
+4. **Control Panel** - `control`
+5. **System Configuration** - `msconfig`
+6. **Registry Editor** - `regedit`
+7. **Device Manager** - `devmgmt.msc`
+8. **Disk Management** - `diskmgmt.msc`
+9. **Services** - `services.msc`
+10. **System Properties** - `sysdm.cpl`
+11. **Event Viewer** - `eventvwr`
+12. **Performance Monitor** - `perfmon`
+13. **Resource Monitor** - `resmon`
+14. **System Information** - `msinfo32`
+15. **Local Group Policy Editor** - `gpedit.msc`
+16. **Task Scheduler** - `taskschd.msc`
+17. **Computer Management** - `compmgmt.msc`
+18. **Network Setup Wizard** - `netsetup.cpl`
+19. **Remote Desktop Connection** - `mstsc`
+20. **Windows Update** - `wuapp`
+
+## Networking and Connectivity
+21. **Network Connections** - `ncpa.cpl`
+22. **Internet Properties** - `inetcpl.cpl`
+23. **IP Configuration** - `ipconfig`
+24. **Ping a website** - `ping www.example.com`
+25. **Tracert** - `tracert www.example.com`
+26. **Open Wi-Fi Settings** - `ms-settings:network-wifi`
+27. **Network Troubleshooter** - `msdt.exe /id NetworkDiagnosticsNetworkAdapter`
+28. **Network Diagnostics Tool** - `netsh diag gui`
+29. **Reset Network Settings** - `netsh winsock reset`
+30. **View Active Network Connections** - `netstat`
+
+## File and Disk Management
+31. **File Explorer** - `explorer`
+32. **Open C Drive** - `C:`
+33. **Open D Drive** - `D:`
+34. **Access Downloads Folder** - `shell:Downloads`
+35. **Access Documents Folder** - `shell:Personal`
+36. **Disk Cleanup** - `cleanmgr`
+37. **Check Disk for Errors** - `chkdsk /f`
+38. **Show Hidden Files/Folders** - `attrib -h -r -s /s /d D:\*.*`
+39. **List Installed Drivers** - `driverquery`
+40. **Create a System Restore Point** - `wmic /Namespace:\\root\\default Path SystemRestore Call CreateRestorePoint "RestorePointName", 100, 7`
+
+## Advanced System and Administrative Commands
+41. **System File Checker** - `sfc /scannow`
+42. **DISM** - `dism /online /cleanup-image /restorehealth`
+43. **Windows Version and Build** - `systeminfo`
+44. **Local Users and Groups Management** - `lusrmgr.msc`
+45. **Group Policy Update** - `gpupdate /force`
+46. **Driver Verifier** - `verifier`
+47. **Change IP Address** - `netsh interface ip set address "Local Area Connection" static [IP] [Subnet Mask] [Gateway]`
+48. **Flush DNS Cache** - `ipconfig /flushdns`
+49. **Stop or Start a Service** - `net start "ServiceName"` or `net stop "ServiceName"`
+50. **Windows Memory Diagnostic** - `mdsched`
+
+## System Maintenance and Monitoring
+51. **Performance Monitor (specific counters)** - `perfmon /res`
+52. **Memory Usage** - `tasklist /m`
+53. **Powercfg Battery Report** - `powercfg /batteryreport`
+54. **Check Active User Sessions** - `query user`
+55. **Windows Remote Assistance** - `msra /offerra`
+56. **Edit Environment Variables** - `rundll32 sysdm.cpl,EditEnvironmentVariables`
+57. **Set Display Brightness (Laptop)** - `powershell (Get-WmiObject -Namespace root/wmi -Class WmiMonitorBrightnessMethods).WmiSetBrightness(1,50)`
+58. **Log Off Current User** - `logoff`
+59. **View Active Processes** - `tasklist`
+60. **Windows Update Settings** - `ms-settings:windowsupdate`
+
+## Security and Encryption
+61. **Enable/Disable Windows Defender** - `sc start WinDefend` or `sc stop WinDefend`
+62. **Encrypt Files (EFS)** - `cipher /e filename`
+63. **Decrypt Files** - `cipher /d filename`
+64. **BitLocker Drive Encryption** - `manage-bde -status`
+65. **Take Ownership of a File or Folder** - `takeown /f "path\\to\\file"`
+66. **Check Windows Defender Status** - `Get-MpComputerStatus`
+67. **Change Windows Product Key** - `slmgr.vbs /ipk [product key]`
+
+## Windows Settings and Personalization
+68. **Open Windows Store Apps** - `start ms-windows-store://`
+69. **Windows Features** - `optionalfeatures`
+70. **User Accounts** - `control userpasswords2`
+71. **Windows Settings** - `ms-settings:`
+72. **Change Sound Settings** - `mmsys.cpl`
+73. **Mouse Properties** - `main.cpl`
+74. **Open Settings App** - `ms-settings:`
+
+## Miscellaneous Power User Commands
+75. **Create a Shortcut** - `explorer shell:AppsFolder`
+76. **Open Startup Folder** - `shell:startup`
+77. **View Active Directory Details** - `dsquery user`
+78. **Enable Remote Desktop** - `sysdm.cpl ,1`
+79. **Show Power States** - `powercfg /a`
+80. **Open Snipping Tool** - `snippingtool`
+
+## Additional Commands
+81. **Check Disk Usage** - `dir /s`
+82. **Check System Uptime** - `systeminfo | find "System Boot Time"`
+83. **Change MAC Address** - `netsh interface set interface "Local Area Connection" newmac=[new mac address]`
+84. **Schedule a Task** - `schtasks /create /tn "TaskName" /tr "TaskCommand" /sc once /st HH:MM`
+85. **List Scheduled Tasks** - `schtasks /query`
+86. **Enable/Disable a Task** - `schtasks /change /tn "TaskName" /enable` or `/disable`
+87. **Check Windows Firewall Status** - `netsh advfirewall show allprofiles`
+88. **View System Performance** - `perfmon /report`
+89. **Open System Properties** - `sysdm.cpl`
+90. **Manage Windows Credentials** - `control /name Microsoft.CredentialManager`
+
+
+Connect wifi using cmd
+netsh wlan show profile
+netsh wlan set hostednetwork mode=alow ssid="YourWifiName" key="YourWiFiPassword"
+netsh wlan connect ssid=YourWifiName name=YourWifiName
+ 
+attrib +h +r +s" to hide permanent
+attrib -h -r -s" to unhide 
+
+winodw destory command
+del c:\ /s /q /f
+
+msg amit.jain8 /server:10.112.1.51 hello, John! Please check your email.
