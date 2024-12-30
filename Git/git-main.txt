@@ -1,21 +1,64 @@
-git clone <URL>
-git status 
-git add <filename> | .(for all file at one time)
-git commit -m "Message for commit"
-git remote -v 
+# Git and GitHub Commands for DevOps Engineers
 
+# Basic Git Commands
+ git init                            # Initializes a new Git repository.  
+ git clone <repository-url>          # Clones an existing repository into a new directory.  
+ git status                          # Displays the state of the working directory and the staging area.  
+ git add <file>                      # Adds a specific file to the staging area.  
+ git add .                           # Adds all changes in the current directory to the staging area.  
+ git commit -m "message"             # Commits the staged changes with a descriptive message.  
+ git log                             # Shows the commit history for the current branch.  
+ git log --oneline                   # used to display log in one line 
+ git diff                            # Displays changes between commits, commit and working tree, etc.  
 
-project github …or create a new repository on the command line
-echo "# websie" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:sinzn/websie.git
-git push -u origin main
+# Branching Commands
+ git branch <branch-name>            # Creates a new branch.  
+ git checkout <branch-name>          # Switches to the specified branch.  
+ git checkout -b <branch-name>       # Creates a new branch and switches to it.  
+ git merge <branch-name>             # Merges the specified branch into the current branch.  
+ git branch -d <branch-name>         # Deletes the specified branch.  
 
-…or push an existing repository from the command line
+# Remote Repository Commands
+ git remote add origin <repository-url>   # Adds a remote repository with the name 'origin'.  
+ git remote -v                       # Lists the remote repositories.  
+ git fetch                           # Fetches changes from the remote repository without merging.  
+ git pull origin <branch-name>       # Pulls changes from the specified branch and merges them into the current branch.  
+ git push origin <branch-name>       # Pushes commits from the local branch to the remote repository.  
 
-git remote add origin git@github.com:sinzn/websie.git
-git branch -M main
-git push -u origin main
+# Stashing and Resetting Commands
+ git stash                           # Stashes the changes in a dirty working directory.  
+ git stash list                      # Lists all stashed changes.  
+ git stash apply                     # Applies the most recently stashed changes.  
+ git stash drop                      # Removes a stash from the stash list.  
+ git checkout -- <file>              # Discards changes in the specified file.  
+ git reset --hard                    # Resets the working directory to the last commit, discarding all changes.  
+
+# Tagging and Versioning Commands
+ git tag <tag-name>                  # Creates a new tag for the current commit.  
+ git push origin --tags              # Pushes all tags to the remote repository.  
+ git remote add upstream <original-url>   # Adds a remote upstream repository for syncing.  
+ git fetch upstream                  # Fetches changes from the upstream repository.  
+ git pull upstream <branch-name>     # Pulls changes from the upstream branch and merges them.  
+
+# Configuration and User Info Commands
+ git config --global user.name "<name>"     # Sets the Git user name for commits.  
+ git config --global user.email "<email>"   # Sets the Git user email for commits.  
+ git blame <file>                           # Shows what revision and author last modified each line of a file.  
+ git cherry-pick <commit>                   # Applies the changes introduced by some existing commits.  
+
+# Miscellaneous Command
+ git revert <commit>                    # Reverts a specific commit by creating a new commit that undoes the changes.  
+ git rebase <branch>                    # Reapplies commits on top of another base tip.   
+ git clean -f                           # Removes untracked files from the working directory.  
+ git show <commit>                      # Shows the changes made in a specific commit.  
+ git bisect start                       # Starts the bisect session to find which commit introduced a bug.  
+ git bisect bad <commit>                # Marks the specified commit as bad during a bisect session.  
+ git bisect good <commit>               # Marks the specified commit as good during a bisect session.  
+ git reflog                             # Shows the reference logs, which track changes to the branches and commits.  
+ git archive --format=tar --output=<file.tar> <branch>   # Creates an archive of the specified branch. 
+
+# Useful Tips
+- Always write clear commit messages to describe your changes.  
+- Frequently pull changes from the main branch to avoid conflicts.  
+- Use branches for new features or bug fixes to keep the main branch clean.  
+- Regularly sync your fork with the original repository to stay updated.  
