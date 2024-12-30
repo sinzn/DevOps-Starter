@@ -1,1 +1,178 @@
+
+Linux is case sensitive remember 
+sudo reboot | shutdown | init 6
 sudo apt-get update &&  sudo apt-get updgrade -y
+
+sudo service sshd start	Start SSH server daemon.
+echo 'Random sample text' > test4.txt
+
+Run process backgr      -- nohup [command]
+To update machine       -- sudo apt update
+to upgrade machine      -- sudo apt upgrade
+to install neofetch     -- sudo apt install neofetch 
+to install ifconfig     -- sudo apt install net-tools 
+to install ftp 	        -- sudo apt install vsftpd
+to install ssh          -- sudo apt install openssh-client
+to install figlet       -- sudo apt install figlet 
+to install lolcat       -- sudo apt install lolcat
+to clear terminal       -- clear or (ctrl + L)
+to install docker       -- sudo apt install docker.io
+to install vim          -- sudo apt install vim 
+to install curl         -- sudo apt install curl 
+to install firewall     -- sudo apt install gufw
+to install nethog       -- sudo apt install nethog
+to install bmon         -- sudo apt install bmon
+to install iptraf       -- sudo apt install iptraf
+to install cbm          -- sudo apt install cbm
+to install cowsay       -- sudo apt install cowsay
+to install cmartix      -- sudo apt install cmartix
+
+to check systeminfo     -- neofetch
+to print workingdir     -- pwd 
+to check directory      -- dir 
+to check history        -- history 
+to change directory     -- cd path(/home/username/Desktop)
+Go on home dir          -- cd 
+Go to 1 dir back        -- cd ..
+goto root dir           -- /
+to list directory       -- ls or ll or ls -lh(list human readable)
+to create folder        -- mkdir file_name 
+to remove folder        -- rmdir file_name
+to remove recursively   -- rm -r file_name
+Creat symbolic link     -- ln -s [path]/[file_name] [link_name]
+to read upper line      -- head -10 file_name 
+to read Last line       -- tail -10 file_name 
+Display contents page   -- more file_name 
+to find Word count      -- wc -w file_name 
+to Read and execute     -- source file_name 
+to directory stack      -- dirs 
+to server copy          -- scp [source_file] [user]@[remote_host]:[destination_path]
+to remote sync          -- rsync -a [source_directory] [user]@[remote_host]:[destination_directory]
+to secure ftp b/w       -- sftp [user]@[remote_host]
+to FTp  b/w             -- ftp [remote_host]
+to see active user      -- id
+to see last user login  -- last
+to see current user     -- who
+to show user activity   -- w
+to show user info       -- finger user_name 
+to check status of user -- sudo vi /etc/group
+to more info about user -- sudo vi /etc/passwd
+to create user with dir -- sudo useradd user_name 
+to create user w/o dir  -- sudo adduser user_name 
+to delete user account  -- sudo userdel user_name 
+to add user in group    -- sudo usermod -aG group_name user_name 
+to add password user    -- sudo passwd [user_name]
+to Add a new group.     -- sudo groupadd [group_name]	
+to Delete a group.      -- sudo groupdel [group_name]	
+to change group name    -- sudo groupmod -n [new_name] [old_name]
+to temp login admin     -- sudo commands
+to switch user          -- su user_name 
+to login with admin     -- sudo su 
+to show PID proces      -- pidof [process_name]
+to copy file            -- cp source destination
+to move file            -- mv source destination
+to rename file          -- mv file_already file_change_name   
+to create file	         -- touch file_name.txt
+to remove file          -- rm file_name.txt
+to read file in T       -- cat file_name.txt
+to read file nano       -- nano file_name.txt or ctrl+c > y(save) > Enter
+to read file in vim     -- vim file_name or 
+to enter text i vim     -- press(i) > esc > :wq(write n quit) > :qa!(quit w/o save)
+to check mannual        -- man commands_name 
+to check ip address     -- ifconfig or ip a 
+to check route 	        -- route 
+to check traceroute     -- traceroute/ tracepath [ip]
+to check internet       -- ping 8.8.8.8
+to ping with load       -- ping 8.8.8.8 
+to checek login use     -- whoami | who
+to find user info       -- id user_name 
+to find more User       -- sudo vi /etc/passwd
+tostatus of service     -- sudo systemctl status services_name 
+to start service        -- sudo systemctl start services_name
+to stop service         -- sudo systemctl stop service_name  
+to restart service      -- sudo systemctl restart services_name 
+to check process        -- top 
+to kill process         -- kill [process_name]
+to terminate all pro    -- killall [label]
+to display memory       -- pmap	
+to tree-like diagram    -- pstree
+to List active pro.     -- ps	
+to more info proces     -- htop
+to more about procs     -- bpytop
+to info about cpu       -- lscpu
+to check firewall       -- sudo ufw enable
+to check disk usage     -- df -h
+to memory status        -- vmstat
+to find package         -- whereis 
+to move cmds file       -- commands > File.txt 
+to check memory usa.    -- free
+to capture in n/w       -- nethogs  
+to system information   -- uname -r
+to See kernel info      -- uname -a
+To system uptime        -- uptime 
+to system hostname      -- hostname	
+to IP address           -- hostname -i 	
+to reboot history       -- last reboot 	
+to time and date        -- date	
+to change clock         -- timedatectl 	
+to calendar             -- cal	
+Schedule shutdown       -- shutdown [hh:mm]
+Shut down immediately   -- shutdown now
+Add new kernel module   -- modprobe [module_name]
+Show bootup messages    -- dmesg	
+show target mount       -- findmnt
+Mount a device          -- mount [device_path] [mount_point]	
+mounted file systems    -- mount
+disk usage file & dir   -- du -ah
+disk partition size     -- fdisk -l	
+Generate SSH key pairs  -- ssh-keygen
+connect host telnet     -- telnet [host]	
+permission (rwxrwxrwx)  -- chmod 777 [file_name]
+permission (rwxr-xr-x)  -- chmod 755 [file_name]
+permission (rwxrw-rw-)  -- chmod 766 [file_name]
+change ownership        -- chown [user_name] [file_name]
+change group owner      -- chown [user_name]:[group_name] [file_name]     
+
+project python on terminal
+run python on terminal -- python3 file_name.py
+
+Project we can change mac address many time to hide our identity  
+chnage mac address 
+sudo su 
+macchanger -c
+clear
+
+Project install and configure ssh 
+first  -- sudo apt install openssh-client
+second -- sudo systemctl start ssh 
+third  -- sudo ufw allow ssh 
+fourth -- sudo systemctl enable ssh 
+fifth  -- sudo useradd ssh username 
+check with cllient -- ssh username@hostname
+ 
+Project install samba server
+first --- sudo apt install samba
+second -- sudo smbpasswd -a username 
+third --- sudo ufw allow smbd
+fourth -- mkdir /home/username/Desktop
+
+project tmux
+first --- sudo apt install tmux
+second -- tmux new -s bob
+third --- tmux ls (to list)
+fourth -- tmux kill-session -t bob
+
+project github …or create a new repository on the command line
+echo "# websie" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:DevOopz/websie.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin git@github.com:DevOopz/websie.git
+git branch -M main
+git push -u origin main
