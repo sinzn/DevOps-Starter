@@ -1,1 +1,1 @@
-
+Putty we use for ssh ans ftp : putty 
