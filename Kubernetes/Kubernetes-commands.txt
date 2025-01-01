@@ -1,0 +1,123 @@
+Kubernetes usefull commands
+
+Cluster Information
+kubectl version                      # Check client and server versions
+kubectl cluster-info                 # Display cluster information
+kubectl get nodes                    # List all nodes
+kubectl describe node <node-name>    # Show details of a specific node
+kubectl top nodes                    # Show resource usage of nodes
+
+Namespaces
+kubectl get namespaces               # List all namespaces
+kubectl create namespace <name>      # Create a new namespace
+kubectl delete namespace <name>      # Delete a namespace
+kubectl config set-context --current --namespace=<name>  # Set default namespace
+kubectl get pods -n <namespace>      # List pods in a specific namespace
+
+Pods
+kubectl get pods                     # List all pods in the default namespace
+kubectl get pods -o wide             # List pods with detailed node information
+kubectl describe pod <pod-name>      # Show details of a specific pod
+kubectl logs <pod-name>              # Get logs from a pod
+kubectl exec -it <pod-name> -- /bin/bash  # Access a pod's shell
+kubectl delete pod <pod-name>        # Delete a pod
+kubectl run <name> --image=<image>   # Run a single pod with an image
+kubectl get pod -l app=<label>       # List pods by label
+kubectl rollout restart deployment <name>  # Restart all pods in a deployment
+
+Deployments
+kubectl get deployments              # List all deployments
+kubectl describe deployment <name>   # Show details of a deployment
+kubectl apply -f <file.yaml>         # Apply configuration from a file
+kubectl delete deployment <name>     # Delete a deployment
+kubectl rollout status deployment <name>              # Check the rollout status
+kubectl scale deployment <name> --replicas=<number>    # Scale a deployment
+kubectl edit deployment <name>                           # Edit deployment configuration
+kubectl set image deployment/<name> <container>=<new-image>  # Update container image
+
+Services
+kubectl get services                 # List all services
+kubectl describe service <name>      # Show details of a service
+kubectl expose pod <pod-name> --type=NodePort --port=8080  # Expose a pod as a service
+kubectl delete service <name>        # Delete a service
+kubectl get service <name> -o yaml   # View the YAML definition of a service
+
+ConfigMaps
+kubectl create configmap <name> --from-literal=key=value  # Create a ConfigMap from literals
+kubectl create configmap <name> --from-file=<path>        # Create a ConfigMap from a file
+kubectl get configmaps                                   # List all ConfigMaps
+kubectl describe configmap <name>                        # Show details of a ConfigMap
+kubectl delete configmap <name>                          # Delete a ConfigMap
+
+Secrets
+kubectl create secret generic <name> --from-literal=key=value  # Create a generic secret
+kubectl get secrets                                             # List all secrets
+kubectl describe secret <name>                                 # Show details of a secret
+kubectl delete secret <name>                                   # Delete a secret
+kubectl create secret tls <name> --cert=<path> --key=<path>    # Create a TLS secret
+
+Ingress
+kubectl get ingress                  # List all ingress resources
+kubectl describe ingress <name>      # Show details of an ingress
+kubectl apply -f ingress.yaml        # Apply an ingress configuration
+kubectl delete ingress <name>        # Delete an ingress resource
+
+Persistent Volumes and Persistent Volume Claims
+kubectl get pv                       # List all persistent volumes
+kubectl get pvc                      # List all persistent volume claims
+kubectl describe pv <name>           # Show details of a persistent volume
+kubectl describe pvc <name>          # Show details of a persistent volume claim
+kubectl delete pvc <name>            # Delete a persistent volume claim
+
+CronJobs and Jobs
+kubectl create job <name> --image=<image>                  # Create a job
+kubectl create cronjob <name> --image=<image> --schedule="* * * * *"  # Create a cronjob
+kubectl get jobs                                           # List all jobs
+kubectl get cronjobs                                       # List all cronjobs
+kubectl delete job <name>                                  # Delete a job
+kubectl delete cronjob <name>                              # Delete a cronjob
+
+Debugging
+kubectl get events                   # List recent events
+kubectl describe pod <pod-name>      # Get detailed information about a pod
+kubectl logs <pod-name>              # View logs from a pod
+kubectl exec -it <pod-name> -- sh    # Open a shell in a running pod
+kubectl debug node/<node-name> --image=busybox  # Debug a node
+
+Resource Managments
+kubectl apply -f resource.yaml       # Apply a resource configuration
+kubectl delete -f resource.yaml      # Delete resources defined in a file
+kubectl get all                      # Get all resource types in a namespace
+kubectl edit <resource-type> <name>  # Edit a resource configuration
+kubectl patch <resource> <name> --patch='{"key":"value"}'  # Patch a resource
+
+Autoscaling
+kubectl autoscale deployment <name> --min=1 --max=10 --cpu-percent=80  # Create an HPA
+kubectl get hpa                     # List all horizontal pod autoscalers
+kubectl delete hpa <name>           # Delete an HPA
+
+Monitoring and Metrics
+kubectl top pods                     # Show resource usage of pods
+kubectl top nodes                    # Show resource usage of nodes
+kubectl get metrics                  # List available metrics (if metrics-server is installed)
+
+
+Role-Based Access Control (RBAC)
+kubectl get roles                    # List all roles
+kubectl get rolebindings             # List all role bindings
+kubectl create role <name> --verb=get,list --resource=pods  # Create a role
+kubectl create rolebinding <name> --role=<role> --user=<user>  # Bind a role
+kubectl delete role <name>           # Delete a role
+kubectl delete rolebinding <name>    # Delete a role binding
+
+Some usefull coommands
+kubectl config view                  # View kubeconfig settings
+kubectl config use-context <name>    # Switch context
+kubectl label nodes <node-name> <key>=<value>  # Add a label to a node
+kubectl cordon <node-name>           # Mark a node as unschedulable
+kubectl uncordon <node-name>         # Mark a node as schedulable
+kubectl drain <node-name>            # Safely evict all pods from a node
+kubectl taint nodes <node-name> key=value:NoSchedule  # Taint a node
+kubectl api-resources                # List all resource types in the API
+kubectl explain <resource>           # Show documentation for a resource type
+kubectl version                      # Show Kubernetes client and server versions

@@ -1,8 +1,0 @@
-Kubernetes
-
-
-kubectl version                      # Check client and server versions
-kubectl cluster-info                 # Display cluster information
-kubectl get nodes                    # List all nodes
-kubectl describe node <node-name>    # Show details of a specific node
-kubectl top nodes                    # Show resource usage of nodes
