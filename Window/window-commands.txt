@@ -4,6 +4,8 @@ open cmd -- md aux\
 In the "Let's connect you to a network" screen, press Shift+F10 to launch cmd;
 Type the following command: OOBE\BYPASSNRO 
 
+Filezila application used for the ftp client on window 
+
 To find user        -- QUERY USER/SERVER:(IP)10.112.201.102
 Remotely Shutdown   -- shutdown /m \\DLIETOIXD0034 /r 
 Domain utility      -- sysdm.cpl 
@@ -86,6 +88,7 @@ alt + tab   -- switch tabs
 new desktop -- win + shift + d 
 return page -- win + shit + arrow 
 cch laguage -- window + space
+to set hostname -- Rename-Computer -NewName "NewHostName" -Restart
 
 to find user activity  -- tasklist /s 10.112.1.140 /fi "imagename eq explorer.exe" /v
 find user info         -- wmic /node: 10.112.1.51 computersystem get manufacturer, model, username
@@ -111,10 +114,6 @@ start "server 1" ping 10.112.1.140 -t
 echo hello > hello.txt
 type hello.txt
 transfer data > ipmessanger
-
-Filezila 
-
-
 
 
 net user                                         ## Lists all user accounts.
