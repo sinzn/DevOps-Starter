@@ -1,2 +1,3 @@
-# DevOps-Starter
-This repo is contain the all code regard the devops engineers will needed and consider as a learning path of devops 
+## DevOps-Starter
+This repo is contain the all code regards the DevOps tools 
+All should be consider as the learning path of DevOps Engineer
