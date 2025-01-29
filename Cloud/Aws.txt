@@ -1,0 +1,18 @@
+Aws(Amazon web Service) with tws
+
+How can I start learning about cloud Service 
+
+* What is cloud And why do we need them 
+* How does cloud works
+* why Aws ?
+* terminologies like SaaS PaaS IaaS
+* What services to learn and get started 
+
+DevOps and Development(13:28) 
+
+- Why we are learning about cloud 
+    * In the early time developer deploy code on servers on premise.
+    * Server are setup on the office on premise, dedicated maintain and mang by local IT team.
+- After that Company are using hybrid system like some data on local and some on cloud 
+
+
