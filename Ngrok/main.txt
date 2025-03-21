@@ -1,43 +1,29 @@
-# Ngrok Tutorial
+Ngrok Tutorial
 
 Welcome to the Ngrok tutorial! In this guide, we'll explore how to use Ngrok to expose local servers to the internet. Ngrok is a powerful tool for developers to easily create secure tunnels to localhost, making it perfect for testing and sharing web applications without deploying them to a live server.
-
-## 📝 **Table of Contents**
-1. [What is Ngrok?](#what-is-ngrok)
-2. [Why Use Ngrok?](#why-use-ngrok)
-3. [Installation](#installation)
-4. [Basic Usage](#basic-usage)
-5. [Advanced Usage](#advanced-usage)
-6. [Use Cases](#use-cases)
-7. [Troubleshooting](#troubleshooting)
-8. [Resources](#resources)
-
 ---
 
-## 🤔 **What is Ngrok?**
+🤔 What is Ngrok?**
 Ngrok is a tool that creates secure tunnels to your local machine, allowing you to expose a local development server to the internet. This is especially useful for testing APIs, webhooks, and sharing development environments without deploying to an actual server.
 
 ---
 
-## 🔧 **Why Use Ngrok?**
-- **Access your local development environment from anywhere**: Share your development work with clients, testers, or colleagues in real time.
-- **Webhook Testing**: Easily test third-party API services that need to send webhooks to your local machine.
-- **Secure tunnels**: Ngrok provides an encrypted tunnel to ensure security while accessing your local app.
+Why Use Ngrok?
+Access your local development environment from anywhere**: Share your development work with clients, testers, or colleagues in real time.
+Webhook Testing**: Easily test third-party API services that need to send webhooks to your local machine.
+Secure tunnels**: Ngrok provides an encrypted tunnel to ensure security while accessing your local app.
 
----
+Installation
 
-## 📥 **Installation**
-
-### 1. **Download Ngrok**
+Download Ngrok
 You can download the latest version of Ngrok from the official website:
 
-- [Download Ngrok](https://ngrok.com/download)
 
-User account : shivam.singxh
-forward 8000 : ngrok http 8000
-forward port with g-auth : ngrok http 8000 --oauth google
-forward port with basic auth : ngrok http --basic-auth="username:password" 8080
-Add Token     : ngrok config add-authtoken <$Your-token>
-file transfer : ./ngrok tcp 22
-Port forward  : ngrok tcp 22
-Ngrok ssh     :  ssh -p {port-number-in-url} username@hostname
+# User account : shivam.singxh
+# forward 8000 : ngrok http 8000
+# forward port with g-auth : ngrok http 8000 --oauth google
+# forward port with basic auth : ngrok http --basic-auth="username:password" 8080
+# Add Token     : ngrok config add-authtoken <$Your-token>
+# file transfer : ./ngrok tcp 22
+# Port forward  : ngrok tcp 22
+# Ngrok ssh     :  ssh -p {port-number-in-url} username@hostname
