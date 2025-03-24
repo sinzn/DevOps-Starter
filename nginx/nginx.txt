@@ -1,0 +1,25 @@
+nginx is a webserver that delivers website and handle request and can also works as a reverse proxy and load balancer and caching tool to manage and scale web traffic.
+work as a delivery of web file.
+
+checking request and revert back to client 
+
+launch ec2 update upgrade install nginx webserver
+
+
+for configuration nginx : /etc/nginx/nginx.conf
+to testing nginx config : sudo nginx -t 
+sudo systemctl restart nginx.service 
+syntax : user;
+events{}
+http{
+        server{
+        location{}
+ }
+}
+
+
+cd /usr/share/nginx/html/
+
+
+for log : cd /usr/share/nginx/html/
+
