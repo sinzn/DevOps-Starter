@@ -175,3 +175,6 @@ git push -u origin main
 git remote add origin git@github.com:DevOopz/websie.git
 git branch -M main
 git push -u origin main
+
+alias updateall='sudo apt update && sudo apt upgrade -y'
+
