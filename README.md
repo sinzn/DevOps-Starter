@@ -45,3 +45,53 @@
 | 28 | **Combine Terraform + Ansible** | Provision & configure your servers in one go. |
 | 29 | **Capstone Project: Deploy & Monitor Full App** | Final hands-on test of everything learned. |
 | 30 | **Documentation, GitHub README, Portfolio** | Showcase your skills for resumes and interviews. |
+
+---
+
+# ☁️ AWS Cloud in 30 Days — Brief Topic Plan
+
+## 🔹 Week 1: AWS Essentials
+| Day | Topic | Why It Matters |
+|-----|-------|----------------|
+| 1 | **AWS Account Setup & Free Tier** | Start hands-on safely and affordably. |
+| 2 | **IAM: Users, Roles, Policies** | Manage access securely. |
+| 3 | **AWS CLI & SDKs (Boto3)** | Automate and interact with AWS from your terminal/code. |
+| 4 | **S3 Basics** | Store, share, and manage data in the cloud. |
+| 5 | **S3 Permissions, Versioning & Lifecycle** | Control access, track changes, reduce cost. |
+| 6 | **CloudWatch Metrics & Logs** | Monitor AWS services and apps. |
+| 7 | **Mini Project: Static Website on S3** | Deploy a simple site with cloud storage + DNS. |
+
+## 🔹 Week 2: Compute Services
+| Day | Topic | Why It Matters |
+|-----|-------|----------------|
+| 8 | **EC2 Basics & SSH Access** | Launch and connect to cloud servers. |
+| 9 | **EC2 AMIs, Snapshots, and EBS** | Backup and customize your instances. |
+| 10 | **Elastic Load Balancer (ELB)** | Distribute traffic across multiple servers. |
+| 11 | **Auto Scaling Groups** | Scale your app based on demand. |
+| 12 | **Lightsail & Cloud9** | Simplified compute/dev environments. |
+| 13 | **EC2 Pricing & Cost Optimization** | Use Reserved/Spot Instances wisely. |
+| 14 | **Mini Project: WordPress on EC2** | Real-world example with web + database. |
+
+## 🔹 Week 3: Databases, Serverless, Networking
+| Day | Topic | Why It Matters |
+|-----|-------|----------------|
+| 15 | **RDS: Managed SQL Databases** | Run PostgreSQL/MySQL without admin overhead. |
+| 16 | **DynamoDB: NoSQL on AWS** | Fast and scalable key-value store. |
+| 17 | **Lambda Functions** | Run code without servers. |
+| 18 | **API Gateway** | Expose Lambda/EC2 via secure HTTP endpoints. |
+| 19 | **VPC, Subnets, Route Tables** | Control your network layout and access. |
+| 20 | **Security Groups, NACLs** | Firewalls for your AWS resources. |
+| 21 | **Mini Project: Serverless API** | Lambda + API Gateway + DynamoDB. |
+
+## 🔹 Week 4: DevOps Tools, Infra as Code, Final Project
+| Day | Topic | Why It Matters |
+|-----|-------|----------------|
+| 22 | **CloudFormation Basics** | Define AWS resources using templates. |
+| 23 | **Terraform on AWS** | Use IaC tools across multiple clouds. |
+| 24 | **ECS: Containers on AWS** | Orchestrate Docker containers with Fargate/EC2. |
+| 25 | **EKS: Kubernetes on AWS** | Run full K8s clusters managed by AWS. |
+| 26 | **CodeCommit, CodeBuild, CodePipeline** | CI/CD tools fully integrated with AWS. |
+| 27 | **AWS Backup & Disaster Recovery** | Keep data safe and recoverable. |
+| 28 | **Cost Explorer & Billing Alarms** | Track and control your cloud spend. |
+| 29 | **Capstone: Full Stack App on AWS** | Deploy frontend + backend with database & CI/CD. |
+| 30 | **Resume Projects + Certification Path** | Showcase work and plan for AWS certification. |
